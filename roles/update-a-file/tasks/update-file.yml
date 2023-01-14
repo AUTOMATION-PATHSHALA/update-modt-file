@@ -4,7 +4,13 @@
      content: "{{ content_proxy }}"
      dest: "{{ file_name }}"
    when:
-     - "'proxy' in group_names" or "'webserver' in group_names"
+     - "'proxy' in group_names"
+     
+  - name: Copy the content to Apache
+   copy:
+     content: "{{ content_webserver }}"
+     dest: "{{ file_name }}"
+   when: "'webserver' in group_names"
     
 
 
