@@ -1,0 +1,11 @@
+---
+- name: to update a motd file
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: to update a file motd
+      include_role:
+        name: update-a-file
+      vars:
+        exec_play: "update-file.yml"

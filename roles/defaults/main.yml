@@ -1,0 +1,5 @@
+---
+# defaults file for update-a-file
+file_name: /etc/motd
+content_proxy: 'Welcome to HAProxy server\n'
+content_webserver: 'Welcome to Apache server\n'
