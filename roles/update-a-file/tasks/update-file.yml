@@ -4,8 +4,7 @@
      content: "{{ content_proxy }}"
      dest: "{{ file_name }}"
    when:
-     - "'proxy' in group_names"
-     - "'webserver' in group_names"
+     - "'proxy' in group_names" or "'webserver' in group_names"
     
 
 
