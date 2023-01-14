@@ -1,6 +1,6 @@
 ---
 - name: to update a motd file
-  hosts: proxy,webserver
+  hosts: all
   gather_facts: false
   become: true
   tasks:
