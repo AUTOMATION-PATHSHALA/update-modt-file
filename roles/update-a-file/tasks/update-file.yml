@@ -6,7 +6,7 @@
    when:
      - "'proxy' in group_names"
      
-  - name: Copy the content to Apache
+ - name: Copy the content to Apache
    copy:
      content: "{{ content_webserver }}"
      dest: "{{ file_name }}"
